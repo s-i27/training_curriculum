@@ -16,7 +16,6 @@ class CalendarsController < ApplicationController
 
   def plan_params
     #イシバシ、イシュー４でコード修正
-    # params.require(:calendars).permit(:date, :plan)
     params.require(:plan).permit(:date, :plan)
   end
 
